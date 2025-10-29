@@ -34,12 +34,36 @@
 a{
   font-family: 'Work Sans',sans-serif;
 }
-h1,h2,h4,h5,h6,p,strong{
+h1,h2,h4,h5,h6,p,strong,span{
   font-family: 'Work Sans',sans-serif;
 }
-h3{
-  font-family: 'Space Mono',serif;
-}
+
 .mono{
   font-family: 'Space Mono',serif;
+}
+.sans{
+  font-family: 'Work Sans',sans-serif;
+}
+strong{
+  font-family: 'Space Mono',serif;
+}
+
+.mushroom{
+  background-image: url('./../images/mushroom.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width:400px){
+  .mushroom{
+    height: 640px !important;
+  }
+}
+@media (min-width:640px){
+  .mushroom{
+    background-image: url(./../images/mushroom-mobile.png);
+    background-size: cover;
+    background-position: center;
+  }
 }
